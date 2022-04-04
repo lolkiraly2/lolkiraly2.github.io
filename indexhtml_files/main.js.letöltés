@@ -1,0 +1,40 @@
+$("#login").click(function () {
+  window.location = "http://localhost/fansub/login/login.php";
+});
+
+$("#registration").click(function () {
+  window.location = "http://localhost/fansub/registration/regisztráció.php";
+});
+
+$("#main").click(function () {
+  window.location = "http://localhost/fansub/index.php";
+});
+
+$("#Gprojektek").click(function () {
+  window.location = "http://localhost/fansub/projektek.php";
+});
+
+$("#Grólam").click(function () {
+  window.location = "http://localhost/fansub/lolkiraly2.php";
+});
+
+$("#exit").click(function () {
+  window.location = "http://localhost/fansub/kijelentkezés.php";
+});
+
+if (document.getElementById("formr"))
+  $("#submit").click(function () {
+    $(this).closest("form").attr("action", "r.php");
+    $(this).closest("form").attr("method", "POST");
+  });
+
+if (document.getElementById("forml"))
+  $("#submitl").click(function () {
+    $(this).closest("form").attr("action", "kapcs.php");
+    $(this).closest("form").attr("method", "POST");
+  });
+
+  function fix(){
+    let maxh = 0;
+    
+  }
